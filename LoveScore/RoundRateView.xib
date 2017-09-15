@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Medium.ttf">
+            <string>Lato-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RoundRateView">
+            <rect key="frame" x="0.0" y="0.0" width="41" height="41"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3y-UJ-iDR">
+                    <rect key="frame" x="0.0" y="0.0" width="41" height="41"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="f3y-UJ-iDR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="AUi-DS-bc8"/>
+                <constraint firstAttribute="bottom" secondItem="f3y-UJ-iDR" secondAttribute="bottom" id="Gwn-Vu-3RT"/>
+                <constraint firstItem="f3y-UJ-iDR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zed-jh-hqd"/>
+                <constraint firstAttribute="trailing" secondItem="f3y-UJ-iDR" secondAttribute="trailing" id="bRb-3d-jZP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="roundRateViewValue">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="0.0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="rateLabel" destination="f3y-UJ-iDR" id="JsX-9c-gVN"/>
+            </connections>
+            <point key="canvasLocation" x="322.5" y="272.5"/>
+        </view>
+    </objects>
+</document>

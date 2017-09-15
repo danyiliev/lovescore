@@ -1,0 +1,26 @@
+//
+//  LoveScore-PrefixHeader.pch
+//  LoveScore
+//
+//  Created by Oleksandr Shymanskyi on 1/21/16.
+//  Copyright © 2016 KindGeek. All rights reserved.
+//
+
+#ifndef LoveScore_PrefixHeader_pch
+#define LoveScore_PrefixHeader_pch
+
+#import "UIViewController+AlertController.h"
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Global.h"
+#import "UITextField+RemoveSpaces.h"
+#import <ReactiveCocoa/RACEXTScope.h>
+#import "SyncManager.h"
+#import "AppDelegate.h"
+#import "TTFormatter.h"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* LoveScore_PrefixHeader_pch */

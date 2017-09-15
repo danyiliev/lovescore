@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </mutableArray>
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AgeCell" rowHeight="65" id="KGk-i7-Jjw" customClass="AgeCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18+" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5o7-zW-6cu">
+                        <rect key="frame" x="8" y="20" width="35" height="24"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Girls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHU-1T-MdG">
+                        <rect key="frame" x="61" y="24" width="37" height="16"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9M-Zs-sjF" customClass="StatisticsRateView">
+                        <rect key="frame" x="214" y="0.0" width="161" height="64"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="l9M-Zs-sjF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BjD-gM-hEk"/>
+                    <constraint firstItem="5o7-zW-6cu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="12" id="CYq-5M-4lr"/>
+                    <constraint firstAttribute="bottom" secondItem="l9M-Zs-sjF" secondAttribute="bottom" id="IKw-9w-Poe"/>
+                    <constraint firstAttribute="trailing" secondItem="l9M-Zs-sjF" secondAttribute="trailing" id="T38-Re-R79"/>
+                    <constraint firstItem="UHU-1T-MdG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="aB4-9t-y8h"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="5o7-zW-6cu" secondAttribute="leading" id="i3c-VA-1C9"/>
+                    <constraint firstItem="l9M-Zs-sjF" firstAttribute="leading" secondItem="UHU-1T-MdG" secondAttribute="trailing" constant="116" id="jmU-xL-5uS"/>
+                    <constraint firstItem="UHU-1T-MdG" firstAttribute="leading" secondItem="5o7-zW-6cu" secondAttribute="trailing" constant="18" id="nCy-w0-6bB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ageRangeLable" destination="5o7-zW-6cu" id="pp3-FS-baO"/>
+                <outlet property="numberOfGirlsLable" destination="UHU-1T-MdG" id="f9Y-Tn-Ku9"/>
+                <outlet property="statisticRateView" destination="l9M-Zs-sjF" id="5Lx-h7-kZ7"/>
+            </connections>
+            <point key="canvasLocation" x="386.5" y="248.5"/>
+        </tableViewCell>
+    </objects>
+</document>

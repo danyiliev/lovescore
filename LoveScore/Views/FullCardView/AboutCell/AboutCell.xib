@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </mutableArray>
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AboutCellId" id="KGk-i7-Jjw" customClass="AboutCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPU-VP-BF2" userLabel="Label - category">
+                        <rect key="frame" x="8" y="11" width="36" height="21"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xu-uA-rLM" userLabel="Label - info">
+                        <rect key="frame" x="276" y="11" width="36" height="21"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4xu-uA-rLM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="35E-Fn-89w"/>
+                    <constraint firstAttribute="bottom" secondItem="cPU-VP-BF2" secondAttribute="bottom" constant="11" id="7Gm-83-DPv"/>
+                    <constraint firstAttribute="bottom" secondItem="4xu-uA-rLM" secondAttribute="bottom" constant="11" id="PhG-LK-dKX"/>
+                    <constraint firstItem="cPU-VP-BF2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="PhS-2d-kAE"/>
+                    <constraint firstAttribute="trailing" secondItem="4xu-uA-rLM" secondAttribute="trailing" constant="8" id="cMa-E8-jOM"/>
+                    <constraint firstItem="4xu-uA-rLM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cPU-VP-BF2" secondAttribute="trailing" constant="10" id="h9i-et-2Yi"/>
+                    <constraint firstItem="cPU-VP-BF2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="oym-Et-YjS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_categoryLabel" destination="cPU-VP-BF2" id="Gwe-lt-3Il"/>
+                <outlet property="_infoLabel" destination="4xu-uA-rLM" id="eGK-e0-SqH"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

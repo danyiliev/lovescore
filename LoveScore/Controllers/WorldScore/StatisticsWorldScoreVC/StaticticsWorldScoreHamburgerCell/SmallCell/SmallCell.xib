@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SmallCell" rowHeight="54" id="KGk-i7-Jjw" customClass="SmallCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" translatesAutoresizingMaskIntoConstraints="NO" id="gPn-SV-gCm">
+                        <rect key="frame" x="16" y="14" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="Hya-N3-nLL"/>
+                            <constraint firstAttribute="width" constant="28" id="kMa-tt-Y5z"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8E-zm-XcJ" customClass="StatisticsRateView">
+                        <rect key="frame" x="207" y="0.0" width="168" height="56"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="168" id="bqM-X5-rye"/>
+                            <constraint firstAttribute="height" constant="56" id="xrx-mB-Q0Z"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPAIN" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEO-QX-2O5">
+                        <rect key="frame" x="52" y="0.0" width="147" height="56"/>
+                        <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="j8E-zm-XcJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2lO-4b-hXY"/>
+                    <constraint firstItem="j8E-zm-XcJ" firstAttribute="leading" secondItem="fEO-QX-2O5" secondAttribute="trailing" constant="8" id="5dd-o0-ELJ"/>
+                    <constraint firstAttribute="bottom" secondItem="j8E-zm-XcJ" secondAttribute="bottom" id="5eA-Vp-AWQ"/>
+                    <constraint firstAttribute="bottom" secondItem="fEO-QX-2O5" secondAttribute="bottom" id="996-k5-2of"/>
+                    <constraint firstItem="gPn-SV-gCm" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Bb0-4Y-aiN"/>
+                    <constraint firstItem="fEO-QX-2O5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="44" id="MyX-DL-Sww"/>
+                    <constraint firstAttribute="trailing" secondItem="j8E-zm-XcJ" secondAttribute="trailing" id="Rkd-0L-xNB"/>
+                    <constraint firstItem="fEO-QX-2O5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Uhb-4o-bVG"/>
+                    <constraint firstItem="fEO-QX-2O5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="baT-Ap-iZm"/>
+                    <constraint firstItem="gPn-SV-gCm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="bvl-GV-2De"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="countryLabel" destination="fEO-QX-2O5" id="0Tz-ZL-gcJ"/>
+                <outlet property="flagImageView" destination="gPn-SV-gCm" id="YG2-6J-RvD"/>
+                <outlet property="statisticRateView" destination="j8E-zm-XcJ" id="sjs-g6-Vh3"/>
+            </connections>
+            <point key="canvasLocation" x="244.5" y="185.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="flag" width="30" height="31"/>
+    </resources>
+</document>

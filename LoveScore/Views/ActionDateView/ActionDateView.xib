@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2Zu-hA-dNG" customClass="ActionDateView">
+            <rect key="frame" x="0.0" y="0.0" width="88" height="38"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="action-date-view-background-image" translatesAutoresizingMaskIntoConstraints="NO" id="QBs-nx-t6Z">
+                    <rect key="frame" x="0.0" y="0.0" width="88" height="38"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09/10/2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9r-f7-VOK">
+                    <rect key="frame" x="0.0" y="3" width="88" height="26"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QBs-nx-t6Z" firstAttribute="leading" secondItem="2Zu-hA-dNG" secondAttribute="leading" id="0dJ-Fg-jPE"/>
+                <constraint firstAttribute="trailing" secondItem="QBs-nx-t6Z" secondAttribute="trailing" id="88Y-p7-lK1"/>
+                <constraint firstAttribute="bottom" secondItem="J9r-f7-VOK" secondAttribute="bottom" constant="9" id="8Sz-N7-Y9k"/>
+                <constraint firstAttribute="bottom" secondItem="QBs-nx-t6Z" secondAttribute="bottom" id="CNx-0N-g54"/>
+                <constraint firstAttribute="trailing" secondItem="J9r-f7-VOK" secondAttribute="trailing" id="QyU-7a-kWL"/>
+                <constraint firstItem="QBs-nx-t6Z" firstAttribute="top" secondItem="2Zu-hA-dNG" secondAttribute="top" id="b2s-UR-cBB"/>
+                <constraint firstItem="J9r-f7-VOK" firstAttribute="leading" secondItem="2Zu-hA-dNG" secondAttribute="leading" id="nxD-W9-S80"/>
+                <constraint firstItem="J9r-f7-VOK" firstAttribute="top" secondItem="2Zu-hA-dNG" secondAttribute="top" constant="3" id="pKP-xs-pnP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLable" destination="J9r-f7-VOK" id="CXd-hw-EGA"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="184"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="action-date-view-background-image" width="88" height="38"/>
+    </resources>
+</document>

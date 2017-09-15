@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Medium.ttf">
+            <string>Lato-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SpecialsCellWithSliderId" rowHeight="51" id="KGk-i7-Jjw" customClass="SpecialsCellWithSlider">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkW-wO-qpm">
+                        <rect key="frame" x="8" y="8" width="119" height="34"/>
+                        <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5.5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="0Nw-nd-FVH">
+                        <rect key="frame" x="133" y="10" width="194" height="31"/>
+                        <color key="minimumTrackTintColor" red="0.84705882349999995" green="0.19215686269999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="maximumTrackTintColor" red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <action selector="sliderEditingDidEnd:" destination="KGk-i7-Jjw" eventType="editingDidEnd" id="pJL-dI-DUa"/>
+                        </connections>
+                    </slider>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Bj-dG-Jub" customClass="RoundRateView">
+                        <rect key="frame" x="333" y="8" width="34" height="34"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0Bj-dG-Jub" secondAttribute="height" multiplier="1:1" id="OLS-vP-2Wy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="valueColor">
+                                <color key="value" red="0.84705882349999995" green="0.19215686269999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.84705882349999995" green="0.19215686269999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="roundRateViewValue" value="2"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0Bj-dG-Jub" firstAttribute="leading" secondItem="0Nw-nd-FVH" secondAttribute="trailing" constant="8" id="0H0-da-PMI"/>
+                    <constraint firstItem="0Bj-dG-Jub" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="0N7-Sl-c3G"/>
+                    <constraint firstItem="kkW-wO-qpm" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="5L2-VR-ePM"/>
+                    <constraint firstItem="0Nw-nd-FVH" firstAttribute="leading" secondItem="kkW-wO-qpm" secondAttribute="trailing" constant="8" id="AOw-6G-FNG"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0Nw-nd-FVH" secondAttribute="bottom" constant="2" id="Bcm-16-Pbt"/>
+                    <constraint firstItem="kkW-wO-qpm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="CWV-yc-n3N"/>
+                    <constraint firstItem="0Nw-nd-FVH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="HO8-s7-n1I"/>
+                    <constraint firstItem="0Bj-dG-Jub" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="RgE-cZ-GTn"/>
+                    <constraint firstItem="kkW-wO-qpm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="SVm-9W-7ff"/>
+                    <constraint firstItem="kkW-wO-qpm" firstAttribute="width" secondItem="0Nw-nd-FVH" secondAttribute="height" multiplier="119:30" id="eW1-7g-nTB"/>
+                    <constraint firstItem="0Bj-dG-Jub" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="zDc-nM-dpM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="parameterLabel" destination="kkW-wO-qpm" id="YGV-70-fA6"/>
+                <outlet property="rateView" destination="0Bj-dG-Jub" id="C1D-OV-GdB"/>
+                <outlet property="slider" destination="0Nw-nd-FVH" id="sW5-Ma-382"/>
+            </connections>
+            <point key="canvasLocation" x="347.5" y="316.5"/>
+        </tableViewCell>
+    </objects>
+</document>

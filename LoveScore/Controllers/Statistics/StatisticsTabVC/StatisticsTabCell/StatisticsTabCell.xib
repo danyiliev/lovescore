@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StatisticsTabCell" id="KGk-i7-Jjw" customClass="StatisticsTabCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tLe-Jd-h59">
+                        <rect key="frame" x="8" y="8" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="tLe-Jd-h59" secondAttribute="height" multiplier="1:1" id="seO-cR-Zh9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgM-db-RPG">
+                        <rect key="frame" x="64" y="22" width="38" height="20"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rgM-db-RPG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="14" id="FsE-E4-Ynr"/>
+                    <constraint firstAttribute="topMargin" secondItem="tLe-Jd-h59" secondAttribute="top" id="On8-nl-aml"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="tLe-Jd-h59" secondAttribute="bottom" id="xIW-d8-hQV"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="tLe-Jd-h59" secondAttribute="leading" id="ybT-Rb-49q"/>
+                    <constraint firstItem="rgM-db-RPG" firstAttribute="leading" secondItem="tLe-Jd-h59" secondAttribute="trailing" constant="8" id="zpz-0K-nvi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_categoryNameLbl" destination="rgM-db-RPG" id="zZR-Z5-stk"/>
+                <outlet property="_photoImageView" destination="tLe-Jd-h59" id="WBd-oH-nc7"/>
+                <outlet property="categoryNameLbl" destination="rgM-db-RPG" id="AIA-co-wGh"/>
+                <outlet property="photoImageView" destination="tLe-Jd-h59" id="KSe-Ns-H6c"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

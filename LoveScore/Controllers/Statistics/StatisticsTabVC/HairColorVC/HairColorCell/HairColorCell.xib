@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HairColorCell" id="KGk-i7-Jjw" customClass="HairColorCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hair-color-blonde" translatesAutoresizingMaskIntoConstraints="NO" id="Ue4-rJ-AUq">
+                        <rect key="frame" x="8" y="15" width="27" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="eEz-aM-5D3"/>
+                            <constraint firstAttribute="width" constant="27" id="o0H-ed-HbF"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blonde" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhG-Zg-scX">
+                        <rect key="frame" x="43" y="23" width="41" height="16"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVI-b9-gVe" customClass="StatisticsRateView">
+                        <rect key="frame" x="207" y="0.0" width="168" height="63"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T2n-Fp-CPP" customClass="RoundRateView">
+                        <rect key="frame" x="92" y="23" width="17" height="17"/>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.19215686269999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="BAA-nQ-bn1"/>
+                            <constraint firstAttribute="width" constant="17" id="Te0-Us-7tg"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="roundRateViewValue" value="1"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="valueColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="pVI-b9-gVe" secondAttribute="bottom" id="CcP-TA-EpW"/>
+                    <constraint firstItem="pVI-b9-gVe" firstAttribute="leading" secondItem="T2n-Fp-CPP" secondAttribute="trailing" constant="98" id="G1G-9N-7iF"/>
+                    <constraint firstItem="T2n-Fp-CPP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="IvN-3u-pne"/>
+                    <constraint firstItem="pVI-b9-gVe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QZx-fc-9qC"/>
+                    <constraint firstAttribute="trailing" secondItem="pVI-b9-gVe" secondAttribute="trailing" id="W0P-d8-Lwi"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="Ue4-rJ-AUq" secondAttribute="leading" id="Y0E-Wh-hoF"/>
+                    <constraint firstItem="DhG-Zg-scX" firstAttribute="leading" secondItem="Ue4-rJ-AUq" secondAttribute="trailing" constant="8" id="bxg-F8-CYR"/>
+                    <constraint firstItem="DhG-Zg-scX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="iiY-kq-uVy"/>
+                    <constraint firstItem="T2n-Fp-CPP" firstAttribute="leading" secondItem="DhG-Zg-scX" secondAttribute="trailing" constant="8" id="qa7-3V-5L8"/>
+                    <constraint firstItem="Ue4-rJ-AUq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="tQD-r5-zqu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="hairColorImageView" destination="Ue4-rJ-AUq" id="ghg-Da-fbx"/>
+                <outlet property="hairColorLabel" destination="DhG-Zg-scX" id="anF-sL-97h"/>
+                <outlet property="numberOfGirlsView" destination="T2n-Fp-CPP" id="ZWA-c5-v6E"/>
+                <outlet property="rateView" destination="T2n-Fp-CPP" id="1Fm-hA-QMz"/>
+                <outlet property="statisticRateView" destination="pVI-b9-gVe" id="3Y5-jd-LDs"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hair-color-blonde" width="27" height="32"/>
+    </resources>
+</document>

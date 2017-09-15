@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Medium.ttf">
+            <string>Lato-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TeaserCardView">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="372"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfz-zT-ZHS" userLabel="View - body">
+                    <rect key="frame" x="0.0" y="42" width="331" height="330"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-picture-default" translatesAutoresizingMaskIntoConstraints="NO" id="1rH-lU-omV" userLabel="Image View - photo">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="330"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lips_in_oval" translatesAutoresizingMaskIntoConstraints="NO" id="RNi-Sf-sGj">
+                            <rect key="frame" x="280" y="279" width="43" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="wQe-yi-Ir6"/>
+                                <constraint firstAttribute="width" constant="43" id="za9-g2-Dd9"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="1rH-lU-omV" secondAttribute="trailing" id="SaE-9R-Jb1"/>
+                        <constraint firstAttribute="bottom" secondItem="RNi-Sf-sGj" secondAttribute="bottom" constant="8" id="Tl7-gD-rhQ"/>
+                        <constraint firstItem="1rH-lU-omV" firstAttribute="top" secondItem="cfz-zT-ZHS" secondAttribute="top" id="hGL-dK-8hU"/>
+                        <constraint firstItem="1rH-lU-omV" firstAttribute="leading" secondItem="cfz-zT-ZHS" secondAttribute="leading" id="kWv-S5-JDd"/>
+                        <constraint firstAttribute="trailing" secondItem="RNi-Sf-sGj" secondAttribute="trailing" constant="8" id="mF8-Mn-XrZ"/>
+                        <constraint firstAttribute="bottom" secondItem="1rH-lU-omV" secondAttribute="bottom" id="qfe-Nw-10L"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sss-Wb-xok" userLabel="View - header">
+                    <rect key="frame" x="0.0" y="0.0" width="331" height="42"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uk_flag" translatesAutoresizingMaskIntoConstraints="NO" id="QdK-Z3-fiA" userLabel="Image View - flag">
+                            <rect key="frame" x="8" y="9" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="QdK-Z3-fiA" secondAttribute="height" multiplier="1:1" id="CjF-5p-iCh"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KATARINA HOLLYWOOD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faO-9g-MdG">
+                            <rect key="frame" x="40" y="10" width="216" height="21"/>
+                            <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="14"/>
+                            <color key="textColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNq-Y4-Lgm" customClass="StarRatingView">
+                            <rect key="frame" x="264" y="15.5" width="59" height="11"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="11" id="5JS-kw-p4h"/>
+                                <constraint firstAttribute="width" constant="59" id="NQ7-5m-2a2"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.6588235294117647" green="0.20392156862745098" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="faO-9g-MdG" firstAttribute="leading" secondItem="QdK-Z3-fiA" secondAttribute="trailing" constant="8" id="1jg-u1-IK7"/>
+                        <constraint firstAttribute="bottom" secondItem="faO-9g-MdG" secondAttribute="bottom" constant="11" id="1yV-7f-Hyg"/>
+                        <constraint firstAttribute="bottom" secondItem="QdK-Z3-fiA" secondAttribute="bottom" constant="9" id="Cpl-BP-QdQ"/>
+                        <constraint firstItem="faO-9g-MdG" firstAttribute="top" secondItem="sss-Wb-xok" secondAttribute="top" constant="10" id="IAP-Ob-HLt"/>
+                        <constraint firstItem="QdK-Z3-fiA" firstAttribute="leading" secondItem="sss-Wb-xok" secondAttribute="leading" constant="8" id="J9W-Bs-mga"/>
+                        <constraint firstItem="QdK-Z3-fiA" firstAttribute="top" secondItem="sss-Wb-xok" secondAttribute="top" constant="9" id="ba8-54-ubp"/>
+                        <constraint firstAttribute="height" constant="42" id="dXM-s0-2Ls"/>
+                        <constraint firstItem="UNq-Y4-Lgm" firstAttribute="leading" secondItem="faO-9g-MdG" secondAttribute="trailing" constant="8" id="ppy-8q-8gj"/>
+                        <constraint firstItem="UNq-Y4-Lgm" firstAttribute="centerY" secondItem="sss-Wb-xok" secondAttribute="centerY" id="yNY-4b-3AO"/>
+                        <constraint firstAttribute="trailing" secondItem="UNq-Y4-Lgm" secondAttribute="trailing" constant="8" id="zeg-s4-1Fj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cfz-zT-ZHS" firstAttribute="width" secondItem="sss-Wb-xok" secondAttribute="width" id="8Q5-yf-TDT"/>
+                <constraint firstItem="cfz-zT-ZHS" firstAttribute="top" secondItem="sss-Wb-xok" secondAttribute="bottom" id="Adk-rw-UOJ"/>
+                <constraint firstAttribute="trailing" secondItem="sss-Wb-xok" secondAttribute="trailing" id="DsL-sr-5TY"/>
+                <constraint firstItem="sss-Wb-xok" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="E35-hK-uul"/>
+                <constraint firstItem="sss-Wb-xok" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dfc-GU-MRh"/>
+                <constraint firstAttribute="bottom" secondItem="cfz-zT-ZHS" secondAttribute="bottom" id="e4K-J7-68X"/>
+                <constraint firstAttribute="trailing" secondItem="cfz-zT-ZHS" secondAttribute="trailing" id="i24-HG-GGv"/>
+                <constraint firstItem="cfz-zT-ZHS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="w4B-QY-ClE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="flagImageView" destination="QdK-Z3-fiA" id="X4L-VK-ua2"/>
+                <outlet property="nameLabel" destination="faO-9g-MdG" id="8Zu-AD-ziG"/>
+                <outlet property="photoImageView" destination="1rH-lU-omV" id="r8B-nf-mhM"/>
+                <outlet property="starRateView" destination="UNq-Y4-Lgm" id="bvw-m6-i4b"/>
+                <outlet property="storyImageView" destination="RNi-Sf-sGj" id="Ig8-lZ-5gf"/>
+            </connections>
+            <point key="canvasLocation" x="291.5" y="267"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lips_in_oval" width="44" height="43"/>
+        <image name="profile-picture-default" width="375" height="375"/>
+        <image name="uk_flag" width="20" height="21"/>
+    </resources>
+</document>

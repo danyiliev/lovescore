@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UICollectionViewController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="DvH-43-Adr" customClass="MapWorldScoreHamburgerCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="3PW-T4-jjH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UjW-YF-6kU">
+                        <size key="itemSize" width="30" height="30"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="8" minY="6" maxX="8" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="DvH-43-Adr" id="6ZD-oa-EXZ"/>
+                        <outlet property="delegate" destination="DvH-43-Adr" id="0GZ-GD-I3K"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3PW-T4-jjH" firstAttribute="leading" secondItem="DvH-43-Adr" secondAttribute="leading" id="KGo-aC-1lr"/>
+                <constraint firstAttribute="bottom" secondItem="3PW-T4-jjH" secondAttribute="bottom" id="N01-86-xLB"/>
+                <constraint firstAttribute="trailing" secondItem="3PW-T4-jjH" secondAttribute="trailing" id="iBi-tt-K9Z"/>
+                <constraint firstItem="3PW-T4-jjH" firstAttribute="top" secondItem="DvH-43-Adr" secondAttribute="top" id="n9M-mg-Ibv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="colectionView" destination="3PW-T4-jjH" id="fX3-yB-0iO"/>
+            </connections>
+            <point key="canvasLocation" x="297.5" y="341"/>
+        </view>
+    </objects>
+</document>

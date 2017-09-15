@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Light.ttf">
+            <string>Lato-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eGM-ws-aCb" customClass="MyCountryWorldScoreHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" translatesAutoresizingMaskIntoConstraints="NO" id="HJs-ef-5Lb">
+                    <rect key="frame" x="8" y="16" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="Eus-QH-vq8"/>
+                        <constraint firstAttribute="width" constant="28" id="J8o-Ag-uBU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XZ-uM-IT7">
+                    <rect key="frame" x="44" y="23" width="32" height="14"/>
+                    <fontDescription key="fontDescription" name="Lato-Light" family="Lato" pointSize="11"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oU-yO-oIu" customClass="StatisticsRateView">
+                    <rect key="frame" x="205" y="0.0" width="170" height="60"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5oU-yO-oIu" firstAttribute="leading" secondItem="8XZ-uM-IT7" secondAttribute="trailing" constant="129" id="8Lt-eU-xC3"/>
+                <constraint firstAttribute="trailing" secondItem="5oU-yO-oIu" secondAttribute="trailing" id="Ko7-Ql-Quv"/>
+                <constraint firstItem="8XZ-uM-IT7" firstAttribute="leading" secondItem="HJs-ef-5Lb" secondAttribute="trailing" constant="8" id="Mbi-Fl-Hi2"/>
+                <constraint firstItem="5oU-yO-oIu" firstAttribute="top" secondItem="eGM-ws-aCb" secondAttribute="top" id="QGW-fy-MlC"/>
+                <constraint firstItem="HJs-ef-5Lb" firstAttribute="top" secondItem="eGM-ws-aCb" secondAttribute="top" constant="16" id="j4H-C8-uAi"/>
+                <constraint firstAttribute="bottom" secondItem="5oU-yO-oIu" secondAttribute="bottom" id="l0M-gJ-meb"/>
+                <constraint firstItem="HJs-ef-5Lb" firstAttribute="leading" secondItem="eGM-ws-aCb" secondAttribute="leading" constant="8" id="mGc-P8-SFU"/>
+                <constraint firstItem="8XZ-uM-IT7" firstAttribute="top" secondItem="eGM-ws-aCb" secondAttribute="top" constant="23" id="yIa-2e-MgH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="countryLabel" destination="8XZ-uM-IT7" id="cS1-7Q-Lzg"/>
+                <outlet property="flagImageView" destination="HJs-ef-5Lb" id="1j5-8L-TbS"/>
+                <outlet property="statisticRateView" destination="5oU-yO-oIu" id="AcL-v0-h4A"/>
+            </connections>
+            <point key="canvasLocation" x="222.5" y="283"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="flag" width="30" height="31"/>
+    </resources>
+</document>

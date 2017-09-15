@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Medium.ttf">
+            <string>Lato-Medium</string>
+        </mutableArray>
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+        <mutableArray key="Lato-Semibold.ttf">
+            <string>Lato-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LuckyListCellId" rowHeight="90" id="5dF-VE-0Dn" userLabel="LuckyListCellId" customClass="LuckyListCell">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5dF-VE-0Dn" id="oZg-p1-19S">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="QFV-oB-RyR" userLabel="numberLabel">
+                        <rect key="frame" x="0.0" y="8" width="25" height="73"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="QFV-oB-RyR" secondAttribute="height" multiplier="25:73" id="myC-Jv-3NH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="15"/>
+                        <color key="textColor" red="0.84705882352941175" green="0.19215686274509802" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0jW-49-IKU" userLabel="Image View ">
+                        <rect key="frame" x="33" y="11" width="68" height="68"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0jW-49-IKU" secondAttribute="height" multiplier="1:1" id="wLi-VI-HGo"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWR-Qf-Ll6">
+                        <rect key="frame" x="114" y="22" width="190" height="46"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KATARINA HOLLYWOOD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CqC-XX-yZj">
+                                <rect key="frame" x="13" y="0.0" width="190" height="23"/>
+                                <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="14"/>
+                                <color key="textColor" red="0.84705882349999995" green="0.19215686269999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMv-zD-wcW">
+                                <rect key="frame" x="13" y="23" width="190" height="23"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uk_flag" translatesAutoresizingMaskIntoConstraints="NO" id="EaD-X4-GWN">
+                                        <rect key="frame" x="0.0" y="1" width="21" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="EaD-X4-GWN" secondAttribute="height" multiplier="1:1" id="XGG-bk-EYR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28 years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygp-Un-HT8">
+                                        <rect key="frame" x="29" y="3" width="161" height="18"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ygp-Un-HT8" firstAttribute="top" secondItem="sMv-zD-wcW" secondAttribute="top" constant="3" id="7wz-yK-VKC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ygp-Un-HT8" secondAttribute="trailing" id="HFe-ob-8di"/>
+                                    <constraint firstAttribute="bottom" secondItem="EaD-X4-GWN" secondAttribute="bottom" constant="1" id="XlK-Z8-RVw"/>
+                                    <constraint firstItem="Ygp-Un-HT8" firstAttribute="leading" secondItem="EaD-X4-GWN" secondAttribute="trailing" constant="8" id="dRE-Bf-VUI"/>
+                                    <constraint firstItem="EaD-X4-GWN" firstAttribute="top" secondItem="sMv-zD-wcW" secondAttribute="top" constant="1" id="fHx-NG-ZTx"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ygp-Un-HT8" secondAttribute="bottom" constant="2" id="gyz-by-TQS"/>
+                                    <constraint firstItem="EaD-X4-GWN" firstAttribute="leading" secondItem="sMv-zD-wcW" secondAttribute="leading" id="zXM-Rk-QD1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sMv-zD-wcW" firstAttribute="top" secondItem="CqC-XX-yZj" secondAttribute="bottom" id="3mH-Fw-jxJ"/>
+                            <constraint firstAttribute="trailing" secondItem="CqC-XX-yZj" secondAttribute="trailing" constant="-13" id="4Lm-NO-Wzv"/>
+                            <constraint firstItem="CqC-XX-yZj" firstAttribute="top" secondItem="OWR-Qf-Ll6" secondAttribute="top" id="ADZ-EH-8xA"/>
+                            <constraint firstItem="sMv-zD-wcW" firstAttribute="height" secondItem="CqC-XX-yZj" secondAttribute="height" id="CQH-ew-X9v"/>
+                            <constraint firstAttribute="trailing" secondItem="sMv-zD-wcW" secondAttribute="trailing" constant="-13" id="RFy-cg-UHA"/>
+                            <constraint firstAttribute="bottom" secondItem="sMv-zD-wcW" secondAttribute="bottom" id="nfE-kz-p9T"/>
+                            <constraint firstItem="CqC-XX-yZj" firstAttribute="leading" secondItem="OWR-Qf-Ll6" secondAttribute="leading" constant="13" id="q7f-t9-bJI"/>
+                            <constraint firstItem="sMv-zD-wcW" firstAttribute="leading" secondItem="OWR-Qf-Ll6" secondAttribute="leading" constant="13" id="yL5-cH-kqF"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XfG-Ij-WAI" customClass="RoundRateView">
+                        <rect key="frame" x="320" y="25" width="40" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="XfG-Ij-WAI" secondAttribute="height" multiplier="1:1" id="cCf-S6-KfS"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="valueColor">
+                                <color key="value" red="0.84705882349999995" green="0.19215686269999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.84705882349999995" green="0.19215686269999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="XfG-Ij-WAI" secondAttribute="bottom" constant="24" id="7Ns-FT-RRJ"/>
+                    <constraint firstItem="XfG-Ij-WAI" firstAttribute="leading" secondItem="OWR-Qf-Ll6" secondAttribute="trailing" constant="16" id="CJd-WD-WwI"/>
+                    <constraint firstAttribute="bottom" secondItem="0jW-49-IKU" secondAttribute="bottom" constant="10" id="DrD-4a-ZgZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="OWR-Qf-Ll6" secondAttribute="bottom" constant="13" id="PGU-OV-acX"/>
+                    <constraint firstItem="OWR-Qf-Ll6" firstAttribute="leading" secondItem="0jW-49-IKU" secondAttribute="trailing" constant="13" id="R2A-Te-Qmx"/>
+                    <constraint firstItem="0jW-49-IKU" firstAttribute="top" secondItem="oZg-p1-19S" secondAttribute="top" constant="11" id="T3h-bI-qf4"/>
+                    <constraint firstItem="OWR-Qf-Ll6" firstAttribute="top" secondItem="oZg-p1-19S" secondAttribute="topMargin" constant="14" id="TPm-1B-Xz6"/>
+                    <constraint firstAttribute="bottom" secondItem="QFV-oB-RyR" secondAttribute="bottom" constant="8" id="WUl-Ro-HOP"/>
+                    <constraint firstAttribute="trailing" secondItem="XfG-Ij-WAI" secondAttribute="trailing" constant="8" id="Z51-Qm-YMN"/>
+                    <constraint firstItem="0jW-49-IKU" firstAttribute="leading" secondItem="QFV-oB-RyR" secondAttribute="trailing" constant="8" id="bOg-mJ-bGJ"/>
+                    <constraint firstItem="QFV-oB-RyR" firstAttribute="leading" secondItem="oZg-p1-19S" secondAttribute="leading" id="cc4-JY-bBj"/>
+                    <constraint firstItem="QFV-oB-RyR" firstAttribute="height" secondItem="0jW-49-IKU" secondAttribute="height" constant="5" id="edy-5g-iEA"/>
+                    <constraint firstItem="XfG-Ij-WAI" firstAttribute="top" secondItem="oZg-p1-19S" secondAttribute="top" constant="25" id="zaM-sq-bJu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ageLabel" destination="Ygp-Un-HT8" id="hHP-hV-qah"/>
+                <outlet property="cellNumberLable" destination="QFV-oB-RyR" id="YBn-KU-AW7"/>
+                <outlet property="flagImageView" destination="EaD-X4-GWN" id="EG8-sq-HXg"/>
+                <outlet property="nameLabel" destination="CqC-XX-yZj" id="yMI-rG-ZVN"/>
+                <outlet property="photoImageView" destination="0jW-49-IKU" id="ae0-XL-X9n"/>
+                <outlet property="rateView" destination="XfG-Ij-WAI" id="cO0-32-kOO"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="317"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="uk_flag" width="20" height="21"/>
+    </resources>
+</document>

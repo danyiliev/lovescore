@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GirlCardCellId" id="gTV-IL-0wX" customClass="GirlCardCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkin-avatar-upload" translatesAutoresizingMaskIntoConstraints="NO" id="4sI-TM-KSh">
+                        <rect key="frame" x="0.0" y="28" width="100" height="109"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wm-ul-bPQ">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="28"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uk_flag" translatesAutoresizingMaskIntoConstraints="NO" id="OH6-O9-1pK">
+                                <rect key="frame" x="5" y="4" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="rZT-4F-umj"/>
+                                    <constraint firstAttribute="width" constant="20" id="vgS-do-0bP"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uea-kw-dis" customClass="StarRatingView">
+                                <rect key="frame" x="51" y="10" width="44" height="8"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="MYO-26-AQS"/>
+                                    <constraint firstAttribute="width" constant="44" id="wtd-2G-PWe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.67450980392156867" green="0.20392156862745098" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uea-kw-dis" firstAttribute="centerY" secondItem="OH6-O9-1pK" secondAttribute="centerY" id="3Vm-7C-foh"/>
+                            <constraint firstItem="OH6-O9-1pK" firstAttribute="leading" secondItem="2Wm-ul-bPQ" secondAttribute="leading" constant="5" id="OiJ-L6-gEb"/>
+                            <constraint firstItem="OH6-O9-1pK" firstAttribute="top" secondItem="2Wm-ul-bPQ" secondAttribute="top" constant="4" id="UuN-9P-luX"/>
+                            <constraint firstAttribute="trailing" secondItem="Uea-kw-dis" secondAttribute="trailing" constant="5" id="eSM-fq-ewc"/>
+                            <constraint firstAttribute="bottom" secondItem="OH6-O9-1pK" secondAttribute="bottom" constant="4" id="roj-3n-PNn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.67450980390000004" green="0.20392156859999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4sI-TM-KSh" firstAttribute="top" secondItem="2Wm-ul-bPQ" secondAttribute="bottom" id="1oB-sU-Ol9"/>
+                <constraint firstAttribute="bottom" secondItem="4sI-TM-KSh" secondAttribute="bottom" constant="3" id="8ca-Pa-IKV"/>
+                <constraint firstItem="2Wm-ul-bPQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EJZ-k5-PKg"/>
+                <constraint firstAttribute="trailing" secondItem="4sI-TM-KSh" secondAttribute="trailing" id="GsF-Bc-90e"/>
+                <constraint firstItem="4sI-TM-KSh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mQ9-41-Aqo"/>
+                <constraint firstItem="2Wm-ul-bPQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pV8-Cr-EmC"/>
+                <constraint firstAttribute="trailing" secondItem="2Wm-ul-bPQ" secondAttribute="trailing" id="rxa-9G-UBt"/>
+            </constraints>
+            <connections>
+                <outlet property="_flagImageView" destination="OH6-O9-1pK" id="KFW-92-Pnc"/>
+                <outlet property="_mainPhotoImageView" destination="4sI-TM-KSh" id="Kbr-SA-Ksw"/>
+                <outlet property="_starRateView" destination="Uea-kw-dis" id="RqD-Ty-zwG"/>
+                <outlet property="flagImageView" destination="OH6-O9-1pK" id="Y5o-33-Q3s"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkin-avatar-upload" width="106" height="106"/>
+        <image name="uk_flag" width="20" height="21"/>
+    </resources>
+</document>

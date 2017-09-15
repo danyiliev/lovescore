@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15B42" minimumToolsVersion="Automatic">
+    <entity name="Card" representedClassName="CardEntity" syncable="YES">
+        <attribute name="card_type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expire_date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="friend" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="ident" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="person" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="Country" representedClassName="CountryEntity" syncable="YES">
+        <attribute name="country" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="DataStore" representedClassName="DataStoreEntity" syncable="YES">
+        <attribute name="attributes" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="categories" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="countries" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="hairColor" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="internationalisation" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="jobs" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="locations" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="nationality" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="ratings" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="socialMedia" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="states" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="Friends" representedClassName="FriendsEntity" syncable="YES">
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="PersonEntity" syncable="YES">
+        <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="attributes" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateOfBirth" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="events" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hairColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="job" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nationality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personRatings" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="socialMedia" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Pictures" representedClassName="PicturesEntity" syncable="YES">
+        <attribute name="pictures" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RetrieveInbox" representedClassName="RetrieveInboxEntity" syncable="YES">
+        <attribute name="cardType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ident" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nationality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="relatedUser" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="UserEntity" syncable="YES">
+        <attribute name="avatarUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateOfBirth" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="friendsNotification" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="generalNotification" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="girlsNotification" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Card" positionX="-5769" positionY="-1881" width="128" height="120"/>
+        <element name="Country" positionX="-5778" positionY="-1800" width="128" height="60"/>
+        <element name="DataStore" positionX="-5931" positionY="-2011" width="128" height="210"/>
+        <element name="Friends" positionX="-5672" positionY="-2032" width="128" height="88"/>
+        <element name="Person" positionX="-5609" positionY="-1909" width="128" height="375"/>
+        <element name="Pictures" positionX="-5769" positionY="-1881" width="128" height="75"/>
+        <element name="RetrieveInbox" positionX="-5931" positionY="-1767" width="128" height="165"/>
+        <element name="User" positionX="-5780" positionY="-1728" width="128" height="225"/>
+    </elements>
+</model>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </mutableArray>
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MonthsCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFS-fZ-0oB">
+                        <rect key="frame" x="8" y="22" width="35" height="18"/>
+                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="April" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARH-hC-mSd">
+                        <rect key="frame" x="51" y="24" width="27" height="16"/>
+                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c54-sz-w1P" customClass="StatisticsRateView">
+                        <rect key="frame" x="217" y="0.0" width="158" height="64"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62x-s0-wxv" customClass="RoundRateView">
+                        <rect key="frame" x="86" y="24" width="17" height="17"/>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.19215686269999999" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="iCo-k1-2kv"/>
+                            <constraint firstAttribute="height" constant="17" id="oU1-BH-G4g"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="roundRateViewValue" value="1"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="valueColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ARH-hC-mSd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="075-YO-S46"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="fFS-fZ-0oB" secondAttribute="leading" id="1Og-Ki-6gR"/>
+                    <constraint firstItem="fFS-fZ-0oB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="14" id="IWW-Ja-zCe"/>
+                    <constraint firstAttribute="bottom" secondItem="c54-sz-w1P" secondAttribute="bottom" id="IkJ-Hp-g20"/>
+                    <constraint firstItem="ARH-hC-mSd" firstAttribute="leading" secondItem="fFS-fZ-0oB" secondAttribute="trailing" constant="8" id="QsQ-Ff-b6a"/>
+                    <constraint firstItem="62x-s0-wxv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="16" id="TVt-6Z-m8I"/>
+                    <constraint firstAttribute="trailing" secondItem="c54-sz-w1P" secondAttribute="trailing" id="nKK-Vc-ytF"/>
+                    <constraint firstItem="c54-sz-w1P" firstAttribute="leading" secondItem="62x-s0-wxv" secondAttribute="trailing" constant="114" id="rUx-2Z-ap1"/>
+                    <constraint firstItem="62x-s0-wxv" firstAttribute="leading" secondItem="ARH-hC-mSd" secondAttribute="trailing" constant="8" id="sXr-aD-mMC"/>
+                    <constraint firstItem="c54-sz-w1P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="tx4-K3-xGf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="monthLable" destination="ARH-hC-mSd" id="2QD-GB-DlM"/>
+                <outlet property="numberOfGirlsView" destination="62x-s0-wxv" id="RyJ-rL-TF5"/>
+                <outlet property="statisticRateView" destination="c54-sz-w1P" id="OUG-qv-0Fe"/>
+                <outlet property="yearLable" destination="fFS-fZ-0oB" id="2Aq-sc-Q9e"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

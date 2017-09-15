@@ -1,0 +1,123 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.0.5)
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Bolts (1.7.0):
+    - Bolts/AppLinks (= 1.7.0)
+    - Bolts/Tasks (= 1.7.0)
+  - Bolts/AppLinks (1.7.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.7.0)
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - EAIntroView (2.7.4):
+    - EARestrictedScrollView (~> 0.2.0)
+  - EARestrictedScrollView (0.2.0)
+  - ECSlidingViewController (2.0.3)
+  - Fabric (1.6.7)
+  - FBSDKCoreKit (4.22.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.22.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.22.0):
+    - FBSDKCoreKit
+  - Haneke (1.0.2)
+  - HCSStarRatingView (1.5)
+  - JTCalendar (2.1.5)
+  - Mantle (1.5.7):
+    - Mantle/extobjc (= 1.5.7)
+  - Mantle/extobjc (1.5.7)
+  - MBProgressHUD (0.9.2)
+  - NewRelicAgent (5.4.1)
+  - OneSignal (1.13.2)
+  - Parse (1.13.0):
+    - Bolts/Tasks (~> 1.6)
+  - ReactiveCocoa (2.1.8):
+    - ReactiveCocoa/Core (= 2.1.8)
+    - ReactiveCocoa/no-arc (= 2.1.8)
+  - ReactiveCocoa/Core (2.1.8):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.1.8)
+  - SHSPhoneComponent (2.15)
+  - SSKeychain (1.4.0)
+  - SWTableViewCell (0.3.7)
+  - TTTAttributedLabel (1.13.4)
+  - WYPopoverController (0.2.2)
+  - ZLSwipeableView (0.0.7)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (~> 2.0.1)
+  - AFNetworking (= 2.6.0)
+  - Crashlytics
+  - EAIntroView (~> 2.7.0)
+  - ECSlidingViewController (~> 2.0.3)
+  - Fabric
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - Haneke (~> 1.0)
+  - HCSStarRatingView
+  - JTCalendar (~> 2.0)
+  - Mantle (~> 1.5.6)
+  - MBProgressHUD
+  - NewRelicAgent
+  - OneSignal
+  - Parse
+  - ReactiveCocoa (= 2.1.8)
+  - SHSPhoneComponent
+  - SSKeychain
+  - SWTableViewCell (~> 0.3.7)
+  - TTTAttributedLabel
+  - WYPopoverController (~> 0.2.0)
+  - ZLSwipeableView (= 0.0.7)
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 8312778b6815578e6a86d630fbcf31dc94c534e7
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  Bolts: a0058fa3b331c5a1e4402d534f2dae36dbff31e4
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  EAIntroView: 50b85eedf414260e61330070ffe5947e72493a62
+  EARestrictedScrollView: f86d61e16c61d3e93c84f8e96e83122a2a3b7631
+  ECSlidingViewController: 6485c14f23b4487e9946535421ca8f111f86cc53
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  FBSDKCoreKit: c693bad19feb225469eeff14452ba364522ee48b
+  FBSDKLoginKit: 1fa529fc622d7b32ebeaffbecd377180833c6d30
+  FBSDKShareKit: 21ab3c8d173f4fa20c47c1061f3a9fac5950b5fa
+  Haneke: 01454a67322faa0dd9d81fc0f447885044e71521
+  HCSStarRatingView: 1d18f79654735514cd6f00e6d90e38cb6320dc31
+  JTCalendar: 57a4420f12d10c93c3b28da96803e7043d1c9281
+  Mantle: 4af47cf9547a4d0ad145a48cd0be3b411a5ae2b8
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  NewRelicAgent: c85f94358d6e02761cae6707364c4402a352a08f
+  OneSignal: 15b94fa760a6754908f11ef92da6ec945923fa2c
+  Parse: f51c24d2feb412e4b2d6cc73d37cb24e8d0089bc
+  ReactiveCocoa: f89f2e009a87951b50321bf9feb958823fcc617e
+  SHSPhoneComponent: 4cec0653a150ad63cbc52b0c8b29ce2d3c9c26f0
+  SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
+  SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
+  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+  WYPopoverController: 00d879c25bddd1fd873dcc21aa98c8308d7f1555
+  ZLSwipeableView: acf50179911c5f1e6150e0a279561344fbcda839
+
+PODFILE CHECKSUM: 2545eb786008b67814d0256761bb2d8c21c87026
+
+COCOAPODS: 1.2.0

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Medium.ttf">
+            <string>Lato-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendsCellId" id="KGk-i7-Jjw" customClass="FriendsCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILl-II-2iD">
+                        <rect key="frame" x="8" y="8" width="304" height="27"/>
+                        <fontDescription key="fontDescription" name="Lato-Medium" family="Lato" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AjK-0k-kuo" userLabel="SwipeCell View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ILl-II-2iD" secondAttribute="trailing" constant="8" id="2bZ-sS-26H"/>
+                    <constraint firstItem="ILl-II-2iD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="5aI-NW-eZs"/>
+                    <constraint firstItem="AjK-0k-kuo" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="GnW-kK-vF9"/>
+                    <constraint firstItem="AjK-0k-kuo" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" id="IRc-pp-LuL"/>
+                    <constraint firstItem="ILl-II-2iD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Njd-XX-gND"/>
+                    <constraint firstItem="AjK-0k-kuo" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="TZh-vk-xiu"/>
+                    <constraint firstAttribute="bottom" secondItem="ILl-II-2iD" secondAttribute="bottom" constant="8" id="dYJ-li-UHa"/>
+                    <constraint firstItem="AjK-0k-kuo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fmR-Ba-Uyv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="ILl-II-2iD" id="D93-U3-Muh"/>
+                <outlet property="swipeCellView" destination="AjK-0k-kuo" id="KXc-8h-rip"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
